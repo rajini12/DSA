@@ -1,1 +1,12 @@
+#Search given element
+#linear search
 
+def linearsearch(arr,element):
+  for index in range(0,len(arr)):
+    if arr[index] == element:
+      return index+1
+  return -1
+
+arr=[10,20,30,50,76]
+element=50
+print(linearsearch(arr,element))
