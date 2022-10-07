@@ -10,3 +10,62 @@ def linearsearch(arr,element):
 arr=[10,20,30,50,76]
 element=50
 print(linearsearch(arr,element))
+
+
+
+#Function to insert a new element at a given position
+
+arr=[2,5,7,4,3]
+element=6
+insertat=3
+
+def insertfunction(arr,element,insertat):
+  for idx,val in enumerate(arr):
+    if idx==insertat:
+      arr=arr[0:idx]+[element]+arr[id:]
+  return arr
+print(insertfunction(arr,element,insertat)
+
+
+#Function to delete element in an array
+
+arr=[6,5,7,3,5]
+element=7
+newarr=[]
+def deleteelement(arr,element):
+  for i,val in enumerate(arr):
+    if val != element:
+      newarr.append(val)
+  return newarr
+print(deleteelement(arr,element))
+    
+    
+#function to reverse an arr
+
+arr=[6,5,7,3,5]
+element=7
+newarr=[]
+def revarr(arr):
+    newarr=arr[::-1]
+    return newarr
+print(revarr(arr))
+
+
+
+
+#left rotate arr
+def left_rotate(arr, num):
+    tmp = arr[0]
+    for index in range(1, num):
+        arr[index - 1] = arr[index]
+    arr[num - 1] = tmp
+arr = [1, 2, 3, 4, 5]
+num = 4
+
+print("Before Left Rotation:", arr)
+
+left_rotate(arr, num)
+print("After '1' Left Rotation:", arr)
+    
+    
+    
