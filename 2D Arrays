@@ -27,3 +27,7 @@ def spiralOrder(matrix):
 matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
 print(spiralOrder(matrix))
    
+
+#transpose of the matrix
+def transpose(matrix):
+        return [[matrix[i][j] for i in range(len(matrix))] for j in range(len(matrix[0]))]
